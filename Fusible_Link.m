@@ -2,7 +2,7 @@ nickel_thickness = 0.3; % Nickel thickness in mm
 nickel_width_range = [0.75:0.5:2.75]; % Nickel width range in mm
 
 onderdonk_seconds = @(I, A, t, Ta) log10((t/(234+Ta))+1)./((33.*((I)/A).^2));
-I = [1:200]; % Range of currents we care about
+I = 1:200; % Range of currents we care about
 
 figure
 hold on;
